@@ -46,66 +46,66 @@
 
         <section class="menu-grid">
             <div class="coffee-menu">
-                <div class="coffee-item">
-                      <img src="assets/img/coffee-1.jpg" alt="first">
+                <div class="coffee-item" onclick="openModal('modal1')">
+                      <a  class="section__button section__button1" href="#"><img src="assets/img/coffee-1.jpg" alt="first"></a>
                     <div class="border-item">
                         <h3>Irish coffee</h3>
                     <p>Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
                     <h2>$7.00</h2>
                 </div>
                 </div>
-                <div class="coffee-item">
-                    <div class="img-coffee"><img src="assets/img/coffee-2.jpg" alt="second"></div>
+                <div class="coffee-item" onclick="openModal('modal2')">
+                    <a  class="section__button section__button2" href="#"><img src="assets/img/coffee-2.jpg" alt="second"></a>
                     <div class="border-item">
                     <h3>Kahlua coffee</h3>
                     <p>Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
                     <h2>$7.00</h2>
                 </div>
             </div>
-                <div class="coffee-item">
-                    <div class="img-coffee"><img src="assets/img/coffee-3.jpg" alt="third"></div>
+                <div class="coffee-item" onclick="openModal('modal3')">
+                    <a class="section__button section__button3" href="#"><img src="assets/img/coffee-3.jpg" alt="third"></a>
                     <div class="border-item">
                     <h3>Honey raf</h3>
                     <p>Espresso with frothed milk, cream and aromatic honey</p>
                     <h2>$5.50</h2>
                 </div>
                 </div>
-                <div class="coffee-item">
-                    <div class="img-coffee"><img src="assets/img/coffee-4.jpg" alt="four"></div>
+                <div class="coffee-item" onclick="openModal('modal4')">
+                    <a class="section__button section__button4" href="#"><img src="assets/img/coffee-4.jpg" alt="four"></a>
                     <div class="border-item">
                     <h3>Ice cappuccino</h3>
                     <p>Cappuccino with soft thick foam in summer version with ice</p>
                     <h2>$5.00</h2>
                 </div>
             </div>
-                <div class="coffee-item">
-                    <div class="img-coffee"><img src="assets/img/coffee-5.jpg" alt="five"></div>
+                <div class="coffee-item" onclick="openModal('modal5')">
+                    <a class="section__button section__button5" href="#"><img src="assets/img/coffee-5.jpg" alt="five"></a>
                     <div class="border-item">
                     <h3>Espresso</h3>
                     <p>Classic black coffee</p>
                     <h2>$4.50</h2>
                 </div>
             </div>
-                <div class="coffee-item">
-                    <div class="img-coffee">
+                <div class="coffee-item" onclick="openModal('modal6')">
+                    <a class="section__button section__button6" href="#">
                         <img src="assets/img/coffee-6.jpg" alt="six">
-                    </div>
+                </a>
                     <div class="border-item">
                     <h3>Latte</h3>
                     <p>Espresso coffee with the addition of steamed milk and dense milk foam</p>
                     <h2>$5.50</h2>
                 </div>
             </div>
-            <div class="coffee-item">
-                <div class="img-coffee"><img src="assets/img/coffee-7.jpg" alt="seven"></div>
+            <div class="coffee-item" onclick="openModal('modal7')">
+                <a class="section__button section__button7" href="#">><img src="assets/img/coffee-7.jpg" alt="seven"></a>
                 <div class="border-item">
                 <h3>Latte macchiato</h3>
                 <p>Espresso with frothed milk and chocolate</p>
                 <h2>$5.50</h2>
             </div>
             </div>
-            <div class="coffee-item">
-                <div class="img-coffee"><img src="assets/img/coffee-8.jpg" alt="eight"></div>
+            <div class="coffee-item" onclick="openModal('modal8')">
+                <a class="section__button section__button8" href="#"><img src="assets/img/coffee-8.jpg" alt="eight"></a>
                 <div class="border-item">
                 <h3>Coffee with cognac</h3>
                 <p>Fragrant black coffee with cognac and whipped cream</p>
@@ -115,6 +115,575 @@
             </div>
         </section>
     </main>
+    <div id="modalOverlay1" class="modal-overlay">
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-img"><img src="assets/img/coffee-1.jpg" alt="Img1"></div>
+            <div class="modal-description">
+                <div class="modal-title">
+                    <h1>Irish coffee</h1>
+                    <p>Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                </div>
+                <div class="modal-size">
+                    <p>Size</p>
+                    <div class="modal-size-button">
+                    <button class="size-btn">
+                        <h2>S</h2>
+                        <p>200 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>M</h2>
+                        <p>300 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>L</h2>
+                        <p>400 ml</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-additives">
+                    <p>Additives</p>
+                    <div class="modal-add-btn">
+                    <button class="add-btn" id="little-btn">
+                        <h2>1</h2>
+                        <p>Sugar</p>
+                    </button>
+                    <button class="add-btn">
+                        <h2>2</h2>
+                        <p>Cinnamon</p>
+                    </button>
+                    <button class="add-btn" id="little-btn">
+                        <h2>3</h2>
+                        <p>Syrup</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-total">
+                    <div><h2>Total:</h2></div>
+                    <div class="modal-title-price"><h2>$7.00</h2></div>
+                </div>
+                <div class="modal-alert">
+                    <div><svg class="alert-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36px" height="36px" fill='none'>
+                        <g clip-path="url(#clip0_268_12877)">
+                        <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_268_12877">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg></div>
+        <div>
+                        <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+        </div>
+                    </div>
+                <div class="modal-close">
+                        <button class="close-btn" onclick="closeModal('modal1')">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div  id="modalOverlay2" class="modal-overlay">
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-img"><img src="assets/img/coffee-2.jpg" alt="Img2"></div>
+            <div class="modal-description">
+                <div class="modal-title">
+                    <h1>Kahlua coffee</h1>
+                    <p>Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+                </div>
+                <div class="modal-size">
+                    <p>Size</p>
+                    <div class="modal-size-button">
+                    <button class="size-btn">
+                        <h2>S</h2>
+                        <p>200 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>M</h2>
+                        <p>300 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>L</h2>
+                        <p>400 ml</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-additives">
+                    <p>Additives</p>
+                    <div class="modal-add-btn">
+                    <button class="add-btn" id="little-btn">
+                        <h2>1</h2>
+                        <p>Sugar</p>
+                    </button>
+                    <button class="add-btn">
+                        <h2>2</h2>
+                        <p>Cinnamon</p>
+                    </button>
+                    <button class="add-btn" id="little-btn">
+                        <h2>3</h2>
+                        <p>Syrup</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-total">
+                    <div><h2>Total:</h2></div>
+                    <div class="modal-title-price"><h2>$7.00</h2></div>
+                </div>
+                <div class="modal-alert">
+                    <div><svg class="alert-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36px" height="36px" fill='none'>
+                        <g clip-path="url(#clip0_268_12877)">
+                        <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_268_12877">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg></div>
+        <div>
+                        <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+        </div>
+                    </div>
+                <div class="modal-close">
+                        <button class="close-btn" onclick="closeModal('modal2')">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div  id="modalOverlay3" class="modal-overlay">
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-img"><img src="assets/img/coffee-3.jpg" alt="Img3"></div>
+            <div class="modal-description">
+                <div class="modal-title">
+                    <h1>Honey raf</h1>
+                    <p>Espresso with frothed milk, cream and aromatic honey</p>
+                </div>
+                <div class="modal-size">
+                    <p>Size</p>
+                    <div class="modal-size-button">
+                    <button class="size-btn">
+                        <h2>S</h2>
+                        <p>200 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>M</h2>
+                        <p>300 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>L</h2>
+                        <p>400 ml</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-additives">
+                    <p>Additives</p>
+                    <div class="modal-add-btn">
+                    <button class="add-btn" id="little-btn">
+                        <h2>1</h2>
+                        <p>Sugar</p>
+                    </button>
+                    <button class="add-btn">
+                        <h2>2</h2>
+                        <p>Cinnamon</p>
+                    </button>
+                    <button class="add-btn" id="little-btn">
+                        <h2>3</h2>
+                        <p>Syrup</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-total">
+                    <div><h2>Total:</h2></div>
+                    <div class="modal-title-price"><h2>$5.50</h2></div>
+                </div>
+                <div class="modal-alert">
+                    <div><svg class="alert-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36px" height="36px" fill='none'>
+                        <g clip-path="url(#clip0_268_12877)">
+                        <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_268_12877">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg></div>
+        <div>
+                        <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+        </div>
+                    </div>
+                <div class="modal-close">
+                        <button class="close-btn" onclick="closeModal('modal3')">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div  id="modalOverlay4" class="modal-overlay">
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-img"><img src="assets/img/coffee-4.jpg" alt="Img4"></div>
+            <div class="modal-description">
+                <div class="modal-title">
+                    <h1>Ice cappuccino</h1>
+                    <p>Cappuccino with soft thick foam in summer version with ice</p>
+                </div>
+                <div class="modal-size">
+                    <p>Size</p>
+                    <div class="modal-size-button">
+                    <button class="size-btn">
+                        <h2>S</h2>
+                        <p>200 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>M</h2>
+                        <p>300 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>L</h2>
+                        <p>400 ml</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-additives">
+                    <p>Additives</p>
+                    <div class="modal-add-btn">
+                    <button class="add-btn" id="little-btn">
+                        <h2>1</h2>
+                        <p>Sugar</p>
+                    </button>
+                    <button class="add-btn">
+                        <h2>2</h2>
+                        <p>Cinnamon</p>
+                    </button>
+                    <button class="add-btn" id="little-btn">
+                        <h2>3</h2>
+                        <p>Syrup</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-total">
+                    <div><h2>Total:</h2></div>
+                    <div class="modal-title-price"><h2>$5.00</h2></div>
+                </div>
+                <div class="modal-alert">
+                    <div><svg class="alert-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36px" height="36px" fill='none'>
+                        <g clip-path="url(#clip0_268_12877)">
+                        <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_268_12877">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg></div>
+        <div>
+                        <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+        </div>
+                    </div>
+                <div class="modal-close">
+                        <button class="close-btn" onclick="closeModal('modal4')">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div  id="modalOverlay5" class="modal-overlay">
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <div class="modal-img"><img src="assets/img/coffee-5.jpg" alt="Img5"></div>
+            <div class="modal-description">
+                <div class="modal-title">
+                    <h1>Espresso</h1>
+                    <p>Classic black coffee</p>
+                </div>
+                <div class="modal-size">
+                    <p>Size</p>
+                    <div class="modal-size-button">
+                    <button class="size-btn">
+                        <h2>S</h2>
+                        <p>200 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>M</h2>
+                        <p>300 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>L</h2>
+                        <p>400 ml</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-additives">
+                    <p>Additives</p>
+                    <div class="modal-add-btn">
+                    <button class="add-btn" id="little-btn">
+                        <h2>1</h2>
+                        <p>Sugar</p>
+                    </button>
+                    <button class="add-btn">
+                        <h2>2</h2>
+                        <p>Cinnamon</p>
+                    </button>
+                    <button class="add-btn" id="little-btn">
+                        <h2>3</h2>
+                        <p>Syrup</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-total">
+                    <div><h2>Total:</h2></div>
+                    <div class="modal-title-price"><h2>$4.50</h2></div>
+                </div>
+                <div class="modal-alert">
+                    <div><svg class="alert-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36px" height="36px" fill='none'>
+                        <g clip-path="url(#clip0_268_12877)">
+                        <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_268_12877">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg></div>
+        <div>
+                        <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+        </div>
+                    </div>
+                <div class="modal-close">
+                        <button class="close-btn" onclick="closeModal('modal5')">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div  id="modalOverlay6" class="modal-overlay">
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <div class="modal-img"><img src="assets/img/coffee-6.jpg" alt="Img6"></div>
+            <div class="modal-description">
+                <div class="modal-title">
+                    <h1>Latte</h1>
+                    <p>Espresso coffee with the addition of steamed milk and dense milk foam</p>
+                </div>
+                <div class="modal-size">
+                    <p>Size</p>
+                    <div class="modal-size-button">
+                    <button class="size-btn">
+                        <h2>S</h2>
+                        <p>200 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>M</h2>
+                        <p>300 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>L</h2>
+                        <p>400 ml</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-additives">
+                    <p>Additives</p>
+                    <div class="modal-add-btn">
+                    <button class="add-btn" id="little-btn">
+                        <h2>1</h2>
+                        <p>Sugar</p>
+                    </button>
+                    <button class="add-btn">
+                        <h2>2</h2>
+                        <p>Cinnamon</p>
+                    </button>
+                    <button class="add-btn" id="little-btn">
+                        <h2>3</h2>
+                        <p>Syrup</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-total">
+                    <div><h2>Total:</h2></div>
+                    <div class="modal-title-price"><h2>$5.50</h2></div>
+                </div>
+                <div class="modal-alert">
+                    <div><svg class="alert-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36px" height="36px" fill='none'>
+                        <g clip-path="url(#clip0_268_12877)">
+                        <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_268_12877">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg></div>
+        <div>
+                        <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+        </div>
+                    </div>
+                <div class="modal-close">
+                        <button class="close-btn" onclick="closeModal('modal6')">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div  id="modalOverlay7" class="modal-overlay">
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <div class="modal-img"><img src="assets/img/coffee-7.jpg" alt="Img7"></div>
+            <div class="modal-description">
+                <div class="modal-title">
+                    <h1>Latte macchiato</h1>
+                    <p>Espresso with frothed milk and chocolate</p>
+                </div>
+                <div class="modal-size">
+                    <p>Size</p>
+                    <div class="modal-size-button">
+                    <button class="size-btn">
+                        <h2>S</h2>
+                        <p>200 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>M</h2>
+                        <p>300 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>L</h2>
+                        <p>400 ml</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-additives">
+                    <p>Additives</p>
+                    <div class="modal-add-btn">
+                    <button class="add-btn" id="little-btn">
+                        <h2>1</h2>
+                        <p>Sugar</p>
+                    </button>
+                    <button class="add-btn">
+                        <h2>2</h2>
+                        <p>Cinnamon</p>
+                    </button>
+                    <button class="add-btn" id="little-btn">
+                        <h2>3</h2>
+                        <p>Syrup</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-total">
+                    <div><h2>Total:</h2></div>
+                    <div class="modal-title-price"><h2>$5.50</h2></div>
+                </div>
+                <div class="modal-alert">
+                    <div><svg class="alert-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36px" height="36px" fill='none'>
+                        <g clip-path="url(#clip0_268_12877)">
+                        <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_268_12877">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg></div>
+        <div>
+                        <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+        </div>
+                    </div>
+                <div class="modal-close">
+                        <button class="close-btn" onclick="closeModal('modal7')">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div  id="modalOverlay8" class="modal-overlay">
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <div class="modal-img"><img src="assets/img/coffee-8.jpg" alt="Img8"></div>
+            <div class="modal-description">
+                <div class="modal-title">
+                    <h1>Coffee with cognac</h1>
+                    <p>Fragrant black coffee with cognac and whipped cream</p>
+                </div>
+                <div class="modal-size">
+                    <p>Size</p>
+                    <div class="modal-size-button">
+                    <button class="size-btn">
+                        <h2>S</h2>
+                        <p>200 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>M</h2>
+                        <p>300 ml</p>
+                    </button>
+                    <button class="size-btn">
+                        <h2>L</h2>
+                        <p>400 ml</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-additives">
+                    <p>Additives</p>
+                    <div class="modal-add-btn">
+                    <button class="add-btn" id="little-btn">
+                        <h2>1</h2>
+                        <p>Sugar</p>
+                    </button>
+                    <button class="add-btn">
+                        <h2>2</h2>
+                        <p>Cinnamon</p>
+                    </button>
+                    <button class="add-btn" id="little-btn">
+                        <h2>3</h2>
+                        <p>Syrup</p>
+                    </button>
+                </div>
+                </div>
+                <div class="modal-total">
+                    <div><h2>Total:</h2></div>
+                    <div class="modal-title-price"><h2>$6.50</h2></div>
+                </div>
+                <div class="modal-alert">
+                    <div><svg class="alert-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36px" height="36px" fill='none'>
+                        <g clip-path="url(#clip0_268_12877)">
+                        <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_268_12877">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg></div>
+        <div>
+                        <p>The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+        </div>
+                    </div>
+                <div class="modal-close">
+                        <button class="close-btn" onclick="closeModal('modal8')">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <footer>
         <div class="footer-info">
             <div class="footer-container">

@@ -59,8 +59,8 @@ let currentSlide = 0;
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-
-        const currentAssortment = getCurrentAssortment(); 
+        // Get the current assortment from the URL or any other means
+        const currentAssortment = getCurrentAssortment(); // Implement this function based on your logic
 
         setActiveButton(currentAssortment);
     });
@@ -82,4 +82,23 @@ let currentSlide = 0;
 
     function getCurrentAssortment() {
         return 1;
+    }
+
+
+    function openModal(modalId) {
+        const modalOverlay = document.getElementById(`modalOverlay${modalId.slice(-1)}`);
+        const modal = document.getElementById(modalId);
+        if (modalOverlay && modal) {
+            modalOverlay.style.display = 'flex';
+            modal.style.display = 'block';
+        }
+    }
+
+    function closeModal(modalId) {
+        const modalOverlay = document.getElementById(`modalOverlay${modalId.slice(-1)}`);
+        const modal = document.getElementById(modalId);
+        if (modalOverlay && modal) {
+            modalOverlay.style.display = 'none';
+            modal.style.display = 'none';
+        }
     }
