@@ -58,8 +58,28 @@ let currentSlide = 0;
         });
     }
 
-    function goToSlide(index) {
-        currentSlide = index;
-        updateSlider();
-    } 
+    document.addEventListener('DOMContentLoaded', function () {
 
+        const currentAssortment = getCurrentAssortment(); 
+
+        setActiveButton(currentAssortment);
+    });
+
+    function changeAssortment(assortmentNumber) {
+        setActiveButton(assortmentNumber);
+    }
+
+    function setActiveButton(assortmentNumber) {
+        document.querySelectorAll('.button-offer-menu button').forEach(function (button) {
+            button.classList.remove('active');
+        });
+
+        const activeButton = document.getElementById(`btn${assortmentNumber}`);
+        if (activeButton) {
+            activeButton.classList.add('active');
+        }
+    }
+
+    function getCurrentAssortment() {
+        return 1;
+    }
