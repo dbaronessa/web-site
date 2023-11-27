@@ -63,4 +63,3 @@ let currentSlide = 0;
         updateSlider();
     } 
 
-   
