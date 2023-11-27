@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeHouse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon/coffee-cup.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika&family=Inter:wght@600&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika&family=Inter:wght@400;600&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__menu" id="menu">
+                <li class="navbar__item"><a href="#favoritecoffee" class="navbar__links" id="contact-page">Favorite coffee</a></li>
+                <li class="navbar__item"><a href="#about" class="navbar__links" id="contact-page">About</a></li>
+                <li class="navbar__item"><a href="#mobileapp" class="navbar__links" id="contact-page">Mobile App</a></li>
+                <li class="navbar__item"><a href="#contactus" class="navbar__links" id="contact-page">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <a class="menu-link" href="#menu">Menu<img class="logo-cup" src="assets/icon/coffee-cup.svg" alt="cup-logo"></a>
+        </div>
+    </div>
+    </header>
+<main class="main-container">
+    <section class="hero-section">
+        <div class="bg-img-hero"></div>
+        <div class="offer">
+            <div class="offer-div">
+             <h1><span>Enjoy</span> premium coffee at our charming cafe</h1>
+             <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                <button class="menu__btn"><a href="#menu">Menu<img class="logo-cup" src="assets/icon/coffee-cup.svg" alt="cup-logo"></a></button>
+            </div>
+        </div>
+    </section>
+    <section class="choose-coffee">
+        <div class="choose">
+            <h1>Choose your <span>favorite</span> coffee</h1>
+        </div>
+        <div class="slider-container">
+            <div class="slides">
+                <div class="slide">
+                    <div class="content-slide">
+                       <img class="slide-img" src="assets/img/coffee-slider-1.png" alt="Slide 1">
+                       <h2>S’mores Frappuccino</h2>
+                       <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                       <p class="price">$5.50</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content-slide">
+                    <img class="slide-img" src="assets/img/coffee-slider-2.png" alt="Slide 2">
+                    <h2>Caramel Macchiato</h2>
+                    <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                    <p class="price">$5.00</p>
+                </div>
+                </div>
+                <div class="slide">
+                    <div class="content-slide">
+                    <img class="slide-img" src="assets/img/coffee-slider-3.png" alt="Slide 3">
+                    <h2>Ice coffee</h2>
+                    <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                    <p class="price">$4.50</p>
+                </div>
+                </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <button class="next" onclick="nextSlide()">❯</button>
+            <div class="progress-bar"></div>
+        <div class="slider-pointer pointer1" onclick="goToSlide(0)"></div>
+        <div class="slider-pointer pointer2" onclick="goToSlide(1)"></div>
+        <div class="slider-pointer pointer3" onclick="goToSlide(2)"></div>
+        </div>
+    </section>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
