@@ -206,7 +206,6 @@ body.noscroll {
 	text-align: center;
 	width: 530px;
 	height: 444px;
-
 }
 
 
@@ -472,6 +471,7 @@ body.noscroll {
 	width: 1360px;
 	height: 1325px;
 	margin-left: 40px;
+	margin-bottom: 100px;
 }
 
 .about-text {
@@ -520,23 +520,23 @@ body.noscroll {
 
 .section-mobile {
     width: 1440px;
-    height: 630px;
+    height: 730px;
     background-image: url("assets/img/mobile-screens.png");
     background-repeat: no-repeat;
-    background-size: 630px; 
-    background-position: 770px;
-    align-items: center;
-	margin-top: 100px;
+	background-size: 600px; 
+	background-position: 730px 100px;
+	padding-top: 100px;
 }
 
 .mobile-app {
 	height: 342px;
 	width: 630px;
 	margin-left: 40px;
-	align-items: center;
+	margin-top: 144px;
 }
 
-.mobile-div span{
+
+.mobile-app span{
 	align-self: stretch;
 	color: var(--text-accent, #B0907A);
 	font-feature-settings: 'clig' off, 'liga' off;
@@ -547,7 +547,7 @@ body.noscroll {
 	line-height: 125%;
 }
 
-.mobile-div h1 {
+.mobile-app h1 {
 	color: var(--text-dark, #403F3D);
 	font-feature-settings: 'clig' off, 'liga' off;
 	font-family: 'Inter', sans-serif;
@@ -558,7 +558,7 @@ body.noscroll {
 	margin-bottom: 40px;
 }
 
-.mobile-div p {
+.mobile-app p {
 	align-self: stretch;
 	color: var(--text-dark, #403F3D);
 	font-feature-settings: 'clig' off, 'liga' off;
@@ -577,11 +577,6 @@ body.noscroll {
 	margin-top: 20px;
 }
 
-svg path {
-    stroke:inherit;
-    stroke-width:inherit;
-    fill:inherit;
-    }
 
 .mobile-btn {
 	display: flex;
@@ -630,7 +625,7 @@ svg path {
 	color: var(--text-light, #E1D4C9);
 }
 
-.mobile-btn a:hover {
+.mobile-btn:hover a{
 	color: var(--text-light, #E1D4C9);
 	text-align: center;
 	font-feature-settings: 'clig' off, 'liga' off;
@@ -641,7 +636,7 @@ svg path {
 	line-height: 140%;
 }
 
-.mobile-btn span:hover {
+.mobile-btn:hover span {
 	color: var(--text-light, #E1D4C9);
 	font-feature-settings: 'clig' off, 'liga' off;
 	font-family: 'Inter', sans-serif;
@@ -650,6 +645,139 @@ svg path {
 	font-weight: 600;
 	line-height: 150%;
 }
+
+.mobile-btn:hover svg path {
+	fill: #E1D4C9;
+}
+
+.footer-info {
+  width: 1440px;
+  height: 450px;
+  margin-bottom: 40px;
+}
+
+.footer-container {
+	height: 450px;
+	width: 1360px;
+	margin-left: 40px;
+	background-color: #665F55;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
+}
+
+.left-side {
+	height: 250px;
+	width: 530px;
+}
+
+.left-side h1 {
+	color: var(--text-light, #E1D4C9);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: 'Inter', sans-serif;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.left-side h1 span {
+	color: var(--text-accent, #B0907A);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: 'Inter', sans-serif;
+	font-size: 60px;
+	font-style: italic;
+	font-weight: 600;
+	line-height: 125%;
+}
+
+
+.footer-icon {
+	margin-top: 50px;
+	height: 60px;
+	width: 204px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-icon button {
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	border: 1px solid #C1B6AD;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #665F55;
+	cursor: pointer;
+	transition: all 0.35s;
+}
+
+.footer-icon button:hover {
+    background-color: #E1D4C9;
+}
+
+.footer-icon button:hover svg path{
+	fill: none;
+	stroke: #403F3D;
+}
+
+.right-side {
+	height: 186px;
+	width: 530px;
+}
+
+.right-side h2 {
+	width: 530px;
+	height: 30px;
+	color: var(--text-light, #E1D4C9);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: 'Inter', sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 125%;
+	margin-bottom: 40px;
+}
+
+.contact-links {
+	width: 530px;
+	height: 110px;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-links a {
+	color: var(--text-light, #E1D4C9);
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.35s;
+	height: 24px;
+	width: 270px;
+	display: flex;
+	align-items: center;
+}
+
+.contact-link svg {
+	height: 20px;
+	width: 20px;
+	margin-right: 8px;
+}
+
+.contact-links a:hover {
+	padding-bottom: 4px;
+	border-bottom: 2px solid #E1D4C9;
+	text-transform: capitalize;
+}
+
 
 
 
