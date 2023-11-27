@@ -323,20 +323,23 @@ body.noscroll {
 }
 
 .slider-container {
+	position: relative;
 	width: 1360px;
 	height: 684px;
 	overflow: hidden;
 }
 
 .slides {
+	position: relative;
+	max-width: 1440px;
 	display: flex;
 	transition: transform 0.5s ease-in-out;
 }
 
 .slide {
+	position: relative;
 	min-width: 100%;
 	box-sizing: border-box;
-    
 }
 
 .content-slide {
@@ -397,9 +400,19 @@ body.noscroll {
 	margin-bottom: 40px;
 }
 
-.prev, .next {
-	cursor: pointer;
+
+
+.slider-buttons {
 	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.slider-buttons button {
+	cursor: pointer;
     top: 1249px;
 	transform: translateY(-50%);
 	font-size: 24px;
@@ -417,13 +430,16 @@ body.noscroll {
     margin-right: 40px;
 }
 
-.prev {
-	left: 10px;
+@media (max-width: 768px) {
+	.slider-buttons {
+		display: none; /* Hide buttons on smaller screens */
+	}
 }
 
-.next {
-	right: 10px;
+.slider-buttons button:hover {
+	background: var(--background-container, #665F55);
 }
+
 
 .progress-bar {
 	position: absolute;
@@ -439,11 +455,12 @@ body.noscroll {
 	position: absolute;
 	height: 4px;
 	width: 30px;
-	left: 620px;
+	left: 580px;
 	transition: transform 0.5s ease-in-out;
 	border-radius: 100px;
     background-color: #C1B6AD;
 	transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+	z-index: 1;
 }
 
 .pointer1 {
