@@ -20,16 +20,24 @@
             <img src="assets/img/logo.png" alt="Logo">
         </div>
         <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar__toggle" id="navbar-mobile">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             <ul class="navbar__menu" id="menu">
                 <li class="navbar__item"><a href="#favoritecoffee" class="navbar__links" id="contact-page">Favorite coffee</a></li>
                 <li class="navbar__item"><a href="#about" class="navbar__links" id="contact-page">About</a></li>
                 <li class="navbar__item"><a href="#mobileapp" class="navbar__links" id="contact-page">Mobile App</a></li>
                 <li class="navbar__item"><a href="#contactus" class="navbar__links" id="contact-page">Contact us</a></li>
             </ul>
+            </div>
+            <div class="menu">
+                <a class="menu-link" href="page1.html" id="menu_link">Menu<img class="logo-cup" src="assets/icon/coffee-cup.svg" alt="cup-logo"></a>
+            </div>
+            
         </nav>
-        <div class="menu">
-            <a class="menu-link" href=#menu id="menu_link">Menu<img class="logo-cup" src="assets/icon/coffee-cup.svg" alt="cup-logo"></a>
-        </div>
+        
     </div>
     </header>
     <main>
@@ -97,7 +105,7 @@
                 </div>
             </div>
             <div class="coffee-item" onclick="openModal('modal7')">
-                <a class="section__button section__button7" href="#">><img src="assets/img/coffee-7.jpg" alt="seven"></a>
+                <a class="section__button section__button7" href="#"><img src="assets/img/coffee-7.jpg" alt="seven"></a>
                 <div class="border-item">
                 <h3>Latte macchiato</h3>
                 <p>Espresso with frothed milk and chocolate</p>
@@ -706,16 +714,16 @@
                <div class="right-side">
                     <h2>Contact us</h2>
                     <div class="contact-links">
-                    <a class="contact-link" href="#location">
+                    <a class="contact-link" id="location" href="https://www.google.com/maps?q=8558+Green+Rd.,+LA" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="none">
                         <path d="M16.6663 8.33329C16.6663 12.0152 9.99967 18.3333 9.99967 18.3333C9.99967 18.3333 3.33301 12.0152 3.33301 8.33329C3.33301 4.65139 6.31778 1.66663 9.99967 1.66663C13.6816 1.66663 16.6663 4.65139 16.6663 8.33329Z" stroke="#E1D4C9" stroke-width="1.5"/>
                         <path d="M10.0003 9.16667C10.4606 9.16667 10.8337 8.79357 10.8337 8.33333C10.8337 7.8731 10.4606 7.5 10.0003 7.5C9.54009 7.5 9.16699 7.8731 9.16699 8.33333C9.16699 8.79357 9.54009 9.16667 10.0003 9.16667Z" fill="#E1D4C9" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>8558 Green Rd.,  LA</a><br>
-                        <a class="contact-link" href="#phone">
+                        <a class="contact-link" href="tel:+16035550123" id="phone">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="none">
                         <path d="M15.0984 12.2516L11.6665 12.9166C9.34845 11.7531 7.91654 10.4166 7.08321 8.33329L7.72483 4.89154L6.51197 1.66663L3.72946 1.66663C2.60191 1.66663 1.71466 2.59958 1.90108 3.71161C2.29888 6.08454 3.37231 10.0391 6.24987 12.9166C9.27338 15.9401 13.5661 17.3318 16.1378 17.9288C17.299 18.1983 18.3332 17.2908 18.3332 16.0988L18.3332 13.4843L15.0984 12.2516Z" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>+1 (603) 555-0123</a><br>
-                    <a class="contact-link" href="#schedule">
+                    <a class="contact-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px" fill="none">
                         <g clip-path="url(#clip0_217_1736)">
                             <path d="M10 5L10 10L15 10" stroke="#E1D4C9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

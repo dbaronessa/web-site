@@ -102,3 +102,20 @@ let currentSlide = 0;
             modal.style.display = 'none';
         }
     }
+
+
+
+const hamburger = document.querySelector(".navbar__toggle");
+const navMenu = document.querySelector(".navbar__menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".navbar__links").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
+
+
