@@ -1,4 +1,5 @@
-let currentSlide = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    let currentSlide = 0;
 
         function nextSlide() {
             currentSlide = (currentSlide + 1) % document.querySelectorAll('.slide').length;
@@ -84,21 +85,37 @@ let currentSlide = 0;
         return 1;
     }
 
-
-    function openModal(modalId) {
-        const modalOverlay = document.getElementById(`modalOverlay${modalId.slice(-1)}`);
-        const modal = document.getElementById(modalId);
-        if (modalOverlay && modal) {
-            modalOverlay.style.display = 'flex';
-            modal.style.display = 'block';
-        }
+    function changeSticks() {
+        const sticks = document.getElementById('.navbar__toggle')
+        sticks.classList.toggle('active')
     }
 
-    function closeModal(modalId) {
-        const modalOverlay = document.getElementById(`modalOverlay${modalId.slice(-1)}`);
-        const modal = document.getElementById(modalId);
-        if (modalOverlay && modal) {
-            modalOverlay.style.display = 'none';
-            modal.style.display = 'none';
-        }
+    document.getElementById('navbar-mobile').addEventListener('click', function () {
+        const menu = document.getElementById('menu');
+        const sticks = document.getElementById('navbar-mobile')
+        sticks.classList.toggle('active')
+        menu.classList.toggle('active');
+
+    });
+
+});
+
+
+function openModal(modalId) {
+    const modalOverlay = document.getElementById(`modalOverlay${modalId.slice(-1)}`);
+    const modal = document.getElementById(modalId);
+    if (modalOverlay && modal) {
+        modalOverlay.style.display = 'flex';
+        modal.style.display = 'block';
     }
+}
+
+function closeModal(modalId) {
+    const modalOverlay = document.getElementById(`modalOverlay${modalId.slice(-1)}`);
+    const modal = document.getElementById(modalId);
+    if (modalOverlay && modal) {
+        modalOverlay.style.display = 'none';
+        modal.style.display = 'none';
+    }
+}
+

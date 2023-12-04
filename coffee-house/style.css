@@ -71,6 +71,8 @@ body.noscroll {
 	max-width: 1360px;
 	margin: 0 auto;
 }
+
+	
 .main-header {
     align-items: center;
 	padding: 20 40 0 40;
@@ -92,7 +94,9 @@ body.noscroll {
 .logo {
 	height: 60px;
 	width: 100px;
+	cursor: pointer;
 }
+
 
 .navbar {
     align-items: center;
@@ -100,7 +104,7 @@ body.noscroll {
     cursor: pointer;
     width: 1188px;
     height: 60px;
-	padding-left: 366px;
+	padding-left: 300px;
 	padding-right: 366px;
 }
 
@@ -142,7 +146,14 @@ body.noscroll {
 }
 
 .navbar__links:hover {
-    font-weight: 700;
+    padding-bottom: 4px;
+	border-bottom: 2px solid #403F3D;
+	text-transform: capitalize;
+    transition: all 0.3s;
+}
+
+.navbar__toggle {
+	display: none;
 }
 
 .menu {
@@ -161,6 +172,8 @@ body.noscroll {
     line-height: 150%; 
 	text-decoration: none;
 	position: relative;
+	left: 810px;
+    bottom: 50px;
 }
 
 .logo-cup {
@@ -323,7 +336,7 @@ body.noscroll {
 .choose span {
 	color: var(--text-accent, #B0907A);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 60px;
     font-style: italic;
     font-weight: 600;
@@ -609,6 +622,7 @@ body.noscroll {
 	align-items: center;
 	border-radius: 100px;
 	border: 1px solid var(--border-dark, #665F55);
+	background-color: #E1D4C9;
 	height: 64px;
 	padding-left: 20px;
 	justify-content: space-between;
@@ -855,7 +869,8 @@ body.noscroll {
 	border-radius: 100px;
     border: 1px solid var(--border-light, #C1B6AD);
 	cursor: pointer;
-	transition: transform 0.25s;	
+	transition: transform 0.25s;
+	background-color: #E1D4C9;	
 }
 
 .button-offer-menu img {
@@ -925,13 +940,20 @@ align-items: center;
 	height: 506px;
 	border: 1px solid #C1B6AD;
 	border-radius: 40px;
+	display: inline-block;
+    overflow: hidden
 }
 
 .coffee-item img {
-	width: 310px;
-	height: 310px;
+	width: 308px;
+	height: 308px;
 	border-radius: 40px;
 	cursor: pointer;
+	transition: 1s;
+    display: block;
+}
+.coffee-item img:hover {
+transform: scale(1.1);
 }
 
 .border-item {
@@ -1316,6 +1338,9 @@ align-items: center;
 	z-index: 1;
 }
 
+.loadind-section {
+	display: none;
+}
 
 
 
