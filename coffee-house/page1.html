@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoffeeHouse-menu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style768.css">
     <link rel="icon" href="assets/icon/coffee-cup.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,7 @@
         
     </div>
     </header>
-    <main>
+    <main class="main-container">
         <section class="offer-menu">
            <div class="text-offer-menu">
             <h1>Behind each of our cups hides an <span>amazing surprise</span></h1>
@@ -86,7 +87,7 @@
                     <h2>$5.00</h2>
                 </div>
             </div>
-                <div class="coffee-item" onclick="openModal('modal5')">
+                <div class="coffee-item" onclick="openModal('modal5')" id="loading">
                     <a class="section__button section__button5" href="#"><img src="assets/img/coffee-5.jpg" alt="five"></a>
                     <div class="border-item">
                     <h3>Espresso</h3>
@@ -94,7 +95,7 @@
                     <h2>$4.50</h2>
                 </div>
             </div>
-                <div class="coffee-item" onclick="openModal('modal6')">
+                <div class="coffee-item" onclick="openModal('modal6')" id="loading">
                     <a class="section__button section__button6" href="#">
                         <img src="assets/img/coffee-6.jpg" alt="six">
                 </a>
@@ -104,7 +105,7 @@
                     <h2>$5.50</h2>
                 </div>
             </div>
-            <div class="coffee-item" onclick="openModal('modal7')">
+            <div class="coffee-item" onclick="openModal('modal7')" id="loading">
                 <a class="section__button section__button7" href="#"><img src="assets/img/coffee-7.jpg" alt="seven"></a>
                 <div class="border-item">
                 <h3>Latte macchiato</h3>
@@ -112,13 +113,19 @@
                 <h2>$5.50</h2>
             </div>
             </div>
-            <div class="coffee-item" onclick="openModal('modal8')">
+            <div class="coffee-item" onclick="openModal('modal8')" id="loading">
                 <a class="section__button section__button8" href="#"><img src="assets/img/coffee-8.jpg" alt="eight"></a>
                 <div class="border-item">
                 <h3>Coffee with cognac</h3>
                 <p>Fragrant black coffee with cognac and whipped cream</p>
                 <h2>$6.50</h2>
             </div>
+            </div>
+            <div class="loadind-section">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
             </div>
         </section>
